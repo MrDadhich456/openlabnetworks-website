@@ -1,51 +1,51 @@
 import { ArrowRight, Terminal } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
-const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center grid-background overflow-hidden">
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background pointer-events-none" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 blur-[120px] rounded-full" />
-      
-      <div className="container mx-auto px-6 py-32 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Status indicator */}
-          <div className="animate-fade-up mb-8 flex justify-center">
-            <div className="status-indicator">
-              SYSTEM STATUS: WORK IN-PROGRESS
-            </div>
-          </div>
+const Hero = () => (
+  <section className="bg-black min-h-screen flex items-center justify-center pt-24 pb-12 px-4 sm:px-6">
+    <div className="max-w-5xl mx-auto text-center space-y-8">
 
-          {/* Main heading */}
-          <h1 className="animate-fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            Cloud-Native Network Infrastructure {" "} 
-            <span className="text-primary glow-text">Intelligently Accelerated. AI-Ready.</span>
-          </h1>
-
-          {/* Subheading */}
-          <p className="animate-fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
-            Empower network accelarators to foster ready to plug-in a cloud-native platform for driving AI workload innovation.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gap-2 text-base px-8">
-              Innovation Sandbox
-              <ArrowRight size={18} />
-            </Button>
-            <Button variant="outline" size="lg" className="gap-2 text-base px-8">
-              <Terminal size={18} />
-              Live Playground
-            </Button>
-          </div>
-        </div>
+      {/* Status pill */}
+      <div className="animate-in flex justify-center">
+        <span className="status-pill">System Status: Work In-Progress</span>
       </div>
 
-      {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-    </section>
-  );
-};
+      {/* Headline */}
+      <h1 className="animate-in-1 font-extrabold tracking-tight leading-[1.1] text-white">
+        <span className="block text-[clamp(24px,5.2vw,60px)] text-white sm:whitespace-nowrap">
+          Cloud-Native Network
+        </span>
+        <span className="block text-[clamp(24px,5.2vw,60px)] text-white sm:whitespace-nowrap">
+          Infrastructure <span className="text-[#00e5cc]">Intelligently</span>
+        </span>
+        <span className="block text-[clamp(24px,5.2vw,60px)] text-[#00e5cc] sm:whitespace-nowrap">
+          Accelerated. AI-Ready.
+        </span>
+      </h1>
+
+      {/* Subtext */}
+      <p className="animate-in-2 text-sm sm:text-base text-zinc-400 max-w-lg mx-auto leading-relaxed">
+        Empower network accelerators to foster a ready-to-plug-in cloud-native
+        platform for driving AI workload innovation.
+      </p>
+
+      {/* CTAs */}
+      <div className="animate-in-3 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a
+          href="/p4-sandbox"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#00e5cc] text-black text-xs sm:text-sm font-semibold hover:bg-[#00cbb5] transition-colors shadow-lg shadow-[#00e5cc]/10"
+        >
+          Innovation Sandbox <ArrowRight size={15} />
+        </a>
+        <a
+          href="#"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-zinc-800 text-zinc-400 font-mono text-xs sm:text-sm hover:text-white hover:border-zinc-700 transition-colors"
+        >
+          <Terminal size={14} /> Live Playground
+        </a>
+      </div>
+
+    </div>
+  </section>
+);
 
 export default Hero;
