@@ -3,8 +3,17 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+
+import Index        from "./pages/Index";
+import About        from "./pages/About";
+import Blog         from "./pages/Blog";
+import Training     from "./pages/Training";
+import Architecture from "./pages/Architecture";
+import Solutions    from "./pages/Solutions";
+import Ecosystem    from "./pages/Ecosystem";
+import P4Sandbox    from "./pages/P4Sandbox";
+import Contact      from "./pages/Contact";
+import NotFound     from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -15,9 +24,16 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="/"             element={<Index />} />
+          <Route path="/about"        element={<About />} />
+          <Route path="/blog"         element={<Blog />} />
+          <Route path="/training"     element={<Training />} />
+          <Route path="/architecture" element={<Architecture />} />
+          <Route path="/solutions"    element={<Solutions />} />
+          <Route path="/ecosystem"    element={<Ecosystem />} />
+          <Route path="/p4-sandbox"   element={<P4Sandbox />} />
+          <Route path="/contact"      element={<Contact />} />
+          <Route path="*"             element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

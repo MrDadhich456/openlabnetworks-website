@@ -1,17 +1,19 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TrainingSection from "@/components/TrainingSection";
+import PartnershipSection from "@/components/PartnershipSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import TrainingSection from "@/components/TrainingSection";
 import Footer from "@/components/Footer";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <Hero />
-      <Footer />
-    </div>
-  );
-};
+const Index = () => (
+  <div className="min-h-screen bg-[#080808]">
+    <Navbar />
+    <Hero />
+    <PartnershipSection />
+    <FeaturesSection />
+    <TrainingSection />
+    <Footer />
+  </div>
+);
 
 export default Index;
