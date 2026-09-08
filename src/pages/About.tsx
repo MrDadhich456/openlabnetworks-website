@@ -24,7 +24,7 @@ const About: React.FC = () => (
         <div className="bg-zinc-950 border border-zinc-800/80 rounded-2xl p-6 space-y-3">
           <h2 className="text-base font-bold text-white">Our Mission</h2>
           <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-            OpenLab Networks exists to make SmartNIC and AI infrastructure networking accessible to everyone.
+            OpenLabNetwork exists to make SmartNIC and AI infrastructure networking accessible to everyone.
             We provide a shared, browser-accessible platform where engineers, researchers, and platform teams can build, test, and deploy P4-programmable data planes on real silicon — without hardware procurement or configuration overhead.
           </p>
         </div>

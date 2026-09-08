@@ -5,7 +5,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 const navLinks = [
   { label: "Home",        to: "/" },
   { label: "About Us",    to: "/about" },
-  { label: "Training",    to: "/training" },
+  { label: "Academy",     to: "/training" },
   { label: "Blog",        to: "/blog" },
   { label: "Partnership", to: "/ecosystem" },
   { label: "Contact",     to: "/contact" },
@@ -47,11 +47,11 @@ export const Navbar: React.FC = () => {
           <img
             src="/openlabnetworks-favicon-white.png"
             alt="OpenLab Networks Logo"
-            className="h-9 w-auto object-contain transition-transform group-hover:scale-105"
+            className="h-11 md:h-12 w-auto object-contain transition-transform group-hover:scale-105"
           />
           <div className="flex flex-col">
             <span className="font-extrabold text-white text-base tracking-tight font-mono">
-              OPENLAB <span className="text-[#00e5cc]">NETWORKS</span>
+              OPENLAB<span className="text-[#00e5cc]">NETWORK</span>
             </span>
             <span className="text-[9px] font-mono text-zinc-500 tracking-wider">
               AI INFRA &amp; SMARTNIC
