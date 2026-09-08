@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const links = [
   { to: "/",          label: "Home" },
   { to: "/about",     label: "About Us" },
-  { to: "/training",  label: "Training" },
+  { to: "/training",  label: "Academy" },
   { to: "/blog",      label: "Blog" },
   { to: "/ecosystem", label: "Partnership" },
   { to: "/contact",   label: "Contact" },
@@ -15,15 +15,15 @@ const Footer: React.FC = () => (
     <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
 
       {/* Brand logo & tagline */}
-      <Link to="/" className="flex items-center gap-2.5 group">
+      <Link to="/" className="flex items-center gap-3 group">
         <img
           src="/openlabnetworks-favicon-white.png"
-          alt="OpenLab Networks"
-          className="h-6 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
+          alt="OpenLabNetwork"
+          className="h-14 md:h-16 w-auto object-contain transition-transform group-hover:scale-105"
         />
-        <span className="text-xs font-mono font-bold tracking-tight">
-          <span className="text-zinc-400">OPENLAB </span>
-          <span className="text-[#00e5cc]">NETWORKS</span>
+        <span className="text-sm font-mono font-bold tracking-tight">
+          <span className="text-zinc-400">OPENLAB</span>
+          <span className="text-[#00e5cc]">NETWORK</span>
         </span>
       </Link>
 
@@ -42,7 +42,7 @@ const Footer: React.FC = () => (
 
       {/* Copyright */}
       <p className="text-[11px] font-mono text-zinc-500">
-        © 2026 OpenLab Networks
+        © 2026 OpenLabNetwork
       </p>
 
     </div>
