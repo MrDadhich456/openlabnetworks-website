@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         <Link to="/" className="flex items-center group">
           <img
             src={theme === "dark" ? "/dark-logo.png" : "/light-logo.png"}
-            alt="openlabnetworks logo"
+            alt="OpenLabNetworks Logo"
             className="h-8 md:h-9 w-auto object-contain transition-transform group-hover:scale-105"
           />
         </Link>
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright */}
       <p className="text-[11px] font-mono" style={{ color: "var(--text-muted)" }}>
-        © 2026 openlabnetworks
+        © 2026 OpenLabNetworks
       </p>
 
       </div>

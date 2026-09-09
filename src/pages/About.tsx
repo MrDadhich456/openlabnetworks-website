@@ -37,7 +37,7 @@ const About: React.FC = () => (
         <div className="space-y-3 max-w-2xl">
           <span className="status-pill">About Us</span>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight" style={{ color: "var(--text-primary)" }}>
-            The <span style={{ color: "var(--accent-color)" }}>openlabnetworks</span>
+            The <span style={{ color: "var(--accent-color)" }}>OpenLabNetworks</span>
           </h1>
           <p className="text-sm sm:text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             We help organizations accelerate their network infrastructure with intelligent,
